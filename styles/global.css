@@ -3,11 +3,15 @@
 *::after {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth; /*добавила плавный скролл*/
+}
 
 body {
   width: 1100px;
   margin: 0 auto;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, 'Arial', sans-serif; /* добавила альтернативный шрифт */
+  background-color: #FFF; /*добавила фон */
 }
 
 h1,
