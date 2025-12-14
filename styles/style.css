@@ -72,8 +72,6 @@
   text-underline-position: under; /*чтобы линия не попадала на текст*/
 }
 
-.overlay {}
-
 .cover{
   width: 1100px; /*наверное можно не задавать*/
   min-height: 757px;
@@ -83,20 +81,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
-
   position: relative;
   z-index: -2;
-
 }
 
 .overlay {
   position: absolute;
   inset: 0;
-  /*top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; -- заменила 4 свойства на inset*/ 
   background-color: rgb(0 0 0/0.6);
   z-index: -1;
 }
@@ -169,26 +160,110 @@
 }
 
 .lots {
-  width: 1052px; /*наверное можно не задавать*/
-  height: 723px;
-  margin: 180px 24px 120px;
+  margin: 0;
+  padding: 180px 24px 120px;
   
 }
 
-.section-title {}
+.lots_heading {
+  padding: 0 0 27px 40px;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+}
 
-.lots_list {}
+.lots_card-list {
+  list-style-type: none;
+  margin: 0; /* надо ли задавать марджин и пэддинг?*/
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
 
-.lots_list-item {}
+}
 
-.lots_link {}
+.lots_card-list-item {
+  width: 334px;
+  min-height: 596px;
+}
+
+.card-link {
+  height: 100%;
+  text-decoration: none;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px;
+  position: relative;
+  z-index: -2;
+  
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card_title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px; /*~120%*/
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px; /*чтобы линия опустилась как мне надо*/
+  
+  
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+.card_text {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 120%;
+  color: #fff;
+
+}
+
+.lots_look-more-link {
+  font-weight: normal;
+  font-size: 20px;
+  color: #000;
+  padding-left: 40px;
+  padding-bottom: 2px;
+  text-decoration-thickness: 1px;
+  text-underline-position: under;
+  
+}
+
+
+
 
 .about {
   width: 1052px; /*наверное можно не задавать*/
   height: 595px;
   margin: 120px 24px 180px;
   padding: 35px 0 13px 47px;
-  border: 2px solid red; /*убрать по завершению */
+  
 }
 
 .column {}
