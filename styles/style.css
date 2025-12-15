@@ -13,6 +13,7 @@
   padding-right: 36.52px;
   font-size: 18px;
   font-weight: normal;
+  color: #000;
 }
 
 .header_links-list {
@@ -52,14 +53,17 @@
   font-weight: normal;
   line-height: 24.3px;
   font-style: normal;
-  max-width: 240px;
-  justify-self: end;
-}
-
-.header_address {
+  color: #000;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  
+}
+
+.header_address {
+  
+  justify-self: end;
+  max-width: 240px;
 }
 
 
@@ -271,7 +275,7 @@
 }
 
 .about_column-right {
-  padding: 133px 0 13px;
+  padding-top: 133px;
 }
 
 
@@ -316,21 +320,53 @@
 
 
 .footer {
-  width: 1100px; /*наверное можно не задавать*/
-  height: 180px;
+  min-height: 180px;
   margin: 0;
-  padding: 0 50px 82px;
-  border: 2px solid red; /*убрать по завершению */
+  padding: 0 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  /*можно сделать repeat(3, auto) ,но надо смотреть как отцентрируется*/
+  align-items: start;
+  
 }
 
-.footer_menu {}
+.footer_menu {
+  font-size: 18px;
+  font-weight: normal;
+  color: #000;
+  text-align: center;
+}
 
-.footer_menu-list {}
+.footer_menu-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  
+}
 
-.footer_menu-item {}
+.footer_menu-list-item {
+  text-underline-position: under; /*чтобы линия не попадала на текст*/
+}
 
-.footer_menu-item-active {}
+.footer_menu-link {}
 
-.social-list {}
+.footer_menu-link-active {
+  text-decoration: none;
+}
 
-.social-item {}
+.footer_social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+  gap: 48px;
+}
+
+.footer_social-list-item {}
+
+.footer_social-link {
+}
+.footer_social-icon {
+  width: 48px;
+  height: 48px;
+}
