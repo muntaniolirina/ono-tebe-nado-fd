@@ -10,8 +10,8 @@ html {
 body {
   width: 1100px;
   margin: 0 auto;
-  font-family: Raleway, 'Arial', sans-serif; /* добавила альтернативный шрифт */
-  background-color: #FFF; /*добавила фон */
+  font-family: Raleway, 'Arial', sans-serif; /* плюс альтернативный шрифт */
+  background-color: #FFF; /* добавила фон */
 }
 
 h1,

@@ -131,7 +131,7 @@
   color: #fff;
   font-weight: normal;
   font-size: 22px;
-  line-height: 127%; /* 28px */
+  line-height: 127%;
   text-align: left;
   text-transform: uppercase;
   word-spacing: 18.5px;
@@ -214,7 +214,7 @@
   color: #fff;
   font-weight: bold;
   font-size: 22px;
-  line-height: 120%; /* 26px */
+  line-height: 120%;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px; /*чтобы линия опустилась как мне надо*/
@@ -285,7 +285,7 @@
   color: #000;
   font-weight: normal;
   font-size: 20px;
-  line-height: 120%; /* 24px */
+  line-height: 120%;
 }
 
 .text-right-padding {
